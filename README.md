@@ -233,18 +233,42 @@ Personalized outreach (Month 1) + Organic content (Month 2-3) + Paid retargeting
 
 ## Agent Details
 
+Each agent is built around a specific framework or principle from the real experience of building Bond ($5M AI business). They're not generic assistants - they encode hard-won lessons about what actually works at each stage.
+
 | Agent | Model | Phase | What It Produces |
 |-------|-------|-------|-----------------|
 | research-agent | Sonnet | 1 | Research reports with real forum quotes |
 | interview-agent | Sonnet | 1 | Questionnaires + transcript analysis |
 | offer-architect | Opus | 2 | Hormozi offers + landing page copy (B2B/B2C) |
 | brand-builder | Sonnet | 2 | Domain suggestions + brand briefs |
-| prompt-engineer | Sonnet | 2,3 | Copy-paste prompts for AI builders |
+| prompt-engineer | Opus | 2,3 | Copy-paste prompts for AI builders |
 | prd-writer | Opus | 3 | Lean PRDs for one-feature MVPs |
 | monetization-strategist | Opus | 4 | Pricing + outreach + closing scripts |
 | growth-strategist | Opus | 5 | Growth trifecta + automation plans |
-| process-guardian | Sonnet | All | 10-point quality scoring + auto-revision |
+| process-guardian | Opus | All | 10-point quality scoring + auto-revision |
 | business-router | - | All | Lead orchestrator, phase detection |
+
+### The Thinking Behind Each Agent
+
+**research-agent** (Sonnet) - The whole point of Phase 1 is finding real people expressing real frustration. Not market sizing, not industry reports. This agent searches Reddit, forums, and communities for specific quotes and pain signals. It uses Sonnet because the task is structured data gathering, not strategic reasoning. The key insight: if you can't find people complaining about the problem, the problem might not be worth solving.
+
+**interview-agent** (Sonnet) - Research shows a problem exists. Interviews tell you if YOUR approach resonates. This agent generates customer discovery questionnaires and analyzes transcripts. It enforces the cardinal rule: do NOT talk about your product during interviews. It also handles the multi-segment approach (3 groups x 3 people = 9 interviews) that prevents you from chasing the wrong customer.
+
+**offer-architect** (Opus) - Built around the Hormozi Value Equation: Value = (Dream Outcome x Perceived Likelihood) / (Time Delay x Effort). This agent turns a validated problem into an irresistible offer with specific adaptations for B2B (ROI-focused, demo CTA) and B2C (emotion-focused, instant access). It writes like a direct response marketer because the landing page copy needs to convert, not just inform. Uses Opus because strategic positioning requires complex reasoning across multiple frameworks.
+
+**brand-builder** (Sonnet) - The real lesson from Bond: start with the domain, not the name. Domains are harder to find. This agent suggests .com, .io, .ai options with prefix strategies (get, go, ask, try) and keeps costs around $11 - no $500 vanity domains at this stage. It also pulls design inspiration from template galleries (Webflow, Framer) so the landing page looks professional without hiring a designer.
+
+**prompt-engineer** (Opus) - The bridge between strategy and execution. Non-technical founders need to paste a prompt into an AI coding platform (Lovable, Base44, Bolt) and get something usable on the first try. This agent produces four types of prompts: landing pages, MVP apps, research queries, and design clones. Uses Opus because generating effective prompts requires meta-reasoning about how AI models interpret instructions - you're essentially writing code that writes code.
+
+**prd-writer** (Opus) - Enforces the most expensive lesson from Bond: they built too much before going to market, then realized customers wanted something different, forcing a complete rebuild. This agent creates lean PRDs focused on ONE feature. It explicitly skips the tech stack (let the builder choose) and includes an "out of scope" section to prevent scope creep. The one-week shipping deadline is non-negotiable. Uses Opus because deciding what NOT to build requires strategic judgment.
+
+**monetization-strategist** (Opus) - Until there's a dollar in the bank, you have a money hole, not a business. This agent drives toward the Revenue Gate: 5 paying customers who are NOT friends or family. It selects from business models (SaaS, usage-based, freemium, etc.), sets specific pricing with 50% early adopter discounts, and creates outreach sequences. It also enforces the anti-pattern: don't invest in SEO, YouTube, or content marketing at this stage - those take 6-12 months. Direct outreach is the fastest feedback loop.
+
+**growth-strategist** (Opus) - Once monetization works, everything changes. This agent builds the Growth Trifecta in sequence (not simultaneously): (1) personalized outreach at scale, (2) organic content (especially LinkedIn for B2B), (3) paid retargeting of warm audiences. The key insight from Bond: people who engage with your LinkedIn posts are 3-5x more likely to respond to outreach. Extract engagers, qualify them, do personalized outreach. For automation, the rule is: only automate things that work manually first.
+
+**process-guardian** (Opus) - Every deliverable passes through this quality gate before reaching the user. It uses a 10-point scoring checklist covering specificity (is this tailored to their business?), phase alignment (right advice for where they are?), quality (no AI slop?), and completeness (no placeholders?). Score 9-10 ships as-is, 7-8 gets auto-revised, below 7 gets rewritten. Instant fails: placeholder text, wrong-phase advice, fabricated research, MVPs with 4+ features. Uses Opus because quality judgment requires understanding all 5 phases and detecting subtle issues.
+
+**business-router** (Lead Orchestrator) - The entry point. Diagnoses which phase the user is in by asking a few quick questions, then routes to the right flow and agents. It never dumps all 5 phases at once. The coaching approach: diagnose first, coach the current phase, flag mistakes before they happen, push them to the next phase. Most people stay too long in Build - the router pushes them toward Monetization as fast as possible.
 
 ## Skill Details
 
