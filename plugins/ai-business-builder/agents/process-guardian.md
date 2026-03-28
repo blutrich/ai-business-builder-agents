@@ -97,6 +97,9 @@ Patterns appearing 2+ times should be flagged for updating shared-instructions.
 - PRD has ONE core feature, not a feature list
 - "Out of Scope" section exists and is meaningful
 - Timeline is one week or less
+- Technical feasibility addressed: if manual processes exist, there's a credible automation hypothesis
+- Not Wishful Thinking: "we'll automate later" without a plan is an instant flag
+- Marty Cagan's 5 questions at least acknowledged: usability, value, technical feasibility, unit economics, ethics
 
 ### Phase 4 (Monetization) Deliverables
 - Outreach messages are personalized, not template-y

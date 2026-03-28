@@ -24,6 +24,18 @@ Orchestrates Phase 3 using prd-writer and prompt-engineer.
 5. Ship within one week
 ```
 
+## Marty Cagan's 5 MVP Questions
+
+Before building, the MVP must have a credible answer for each of these (from Marty Cagan, via Yuval Samet / RiseUp):
+
+1. **Can they use it?** (Usability) - Will users actually understand how to use it without hand-holding?
+2. **Would they use it?** (Value) - Is there enough value that they'd come back and recommend it?
+3. **Can we build it?** (Technical Feasibility) - Can this scale beyond a prototype? If you're doing everything manually and saying "we'll automate later" with no plan, that's not MVP, that's Wishful Thinking.
+4. **Is it financially viable?** (Unit Economics) - Does the math work at scale? Can you deliver this without losing money per customer?
+5. **Should we do it?** (Ethics) - Is the business model ethical? Are you exploiting user data or creating genuine value?
+
+You don't need perfect answers. But you need a credible hypothesis for each, especially #3 (technical feasibility).
+
 ## The ONE Feature Test
 
 Before the PRD starts, force this question:
@@ -64,6 +76,8 @@ If the MVP is not software:
 - Iterating on design instead of shipping
 - Not showing the MVP to anyone until it's "ready"
 - **The Bond mistake:** Building too much before going to market, then realizing customers wanted something different, forcing a complete rebuild. This cost months and real money.
+- **The Wishful Thinking trap:** Building a 100% manual/human service and saying "we'll automate later." If you have no hypothesis for how to scale it technically, you don't have an MVP, you have a consulting gig. (Yuval Samet, RiseUp)
+- **Giving it away free and calling it validated.** Pricing is a feature of the product. Until people pay, you haven't validated. (See Phase 4)
 
 ## Failure Modes
 - **Taking longer than 1 week:** You're building too much. Cut features ruthlessly.

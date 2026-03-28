@@ -1,0 +1,427 @@
+{
+  "evals": [
+    {
+      "eval_id": 1,
+      "eval_name": "validation",
+      "with_skill": {
+        "assertions": [
+          {
+            "text": "diagnoses-phase-1",
+            "passed": true,
+            "evidence": "Explicitly states: 'You are in Phase 1: Validation, and everything depends on getting this right.'"
+          },
+          {
+            "text": "recommends-research-first",
+            "passed": true,
+            "evidence": "Step 1 is 'Problem Research' directing user to Reddit (r/climbing, r/climbharder, r/bouldering), Mountain Project forums for frustrations and complaints."
+          },
+          {
+            "text": "recommends-customer-interviews",
+            "passed": true,
+            "evidence": "Step 2 is 'Customer Discovery Interviews' with detailed instructions: 'Aim for at least 9 conversations' with video calls and AI note-taker."
+          },
+          {
+            "text": "warns-against-building-first",
+            "passed": true,
+            "evidence": "Dedicated section 'The Mistake You Are About to Make' and 'What NOT to Do Right Now' including 'Do not build the app yet' and 'Do not pick a tech stack.'"
+          },
+          {
+            "text": "does-not-dump-all-phases",
+            "passed": true,
+            "evidence": "Focuses entirely on Phase 1 Validation. Only briefly mentions Phase 2 at the end as the next step after validation is complete."
+          },
+          {
+            "text": "tool-agnostic",
+            "passed": true,
+            "evidence": "Says 'Open an AI assistant (Claude, ChatGPT, Perplexity, or similar)' and 'Use an AI note-taker (Fireflies, Otter, Fathom, or similar)' -- suggests categories, not mandates."
+          },
+          {
+            "text": "mentions-no-pitching-rule",
+            "passed": true,
+            "evidence": "Explicitly states in bold: 'Critical rule: Do NOT pitch ClimbClaw during these interviews.' Explains why: 'people will be polite and tell you it sounds cool. That data is worthless.'"
+          }
+        ],
+        "pass_rate": 1.0,
+        "total_tokens": 23716,
+        "duration_ms": 70557
+      },
+      "without_skill": {
+        "assertions": [
+          {
+            "text": "diagnoses-phase-1",
+            "passed": false,
+            "evidence": "Does not mention 'Phase 1' or any phase framework. Starts with 'Here's how I'd approach building ClimbClaw from the ground up.'"
+          },
+          {
+            "text": "recommends-research-first",
+            "passed": true,
+            "evidence": "Step 1 says 'Talk to real climbers (10-15 conversations)' and mentions r/climbharder, r/bouldering, Mountain Project forums."
+          },
+          {
+            "text": "recommends-customer-interviews",
+            "passed": true,
+            "evidence": "Recommends talking to climbers and asking key questions, though less structured than with_skill version."
+          },
+          {
+            "text": "warns-against-building-first",
+            "passed": false,
+            "evidence": "Includes Step 3 'Design the NanoClaw Agent Architecture', Step 5 'Technical Stack for MVP', and a full week plan where Day 3 is 'Write the Training Plan Agent's system prompt' and Day 4-5 is building a prototype. Actively encourages building within the first week."
+          },
+          {
+            "text": "does-not-dump-all-phases",
+            "passed": false,
+            "evidence": "Dumps validation, feature selection, agent architecture, tech stack, revenue model, and risk assessment all in one response -- covering multiple phases at once."
+          },
+          {
+            "text": "tool-agnostic",
+            "passed": false,
+            "evidence": "Mandates specific tools: 'React Native', 'Node.js or Python FastAPI', 'Claude API or OpenAI', 'PostgreSQL or Supabase', 'Clerk or Supabase Auth.'"
+          },
+          {
+            "text": "mentions-no-pitching-rule",
+            "passed": false,
+            "evidence": "No mention of avoiding pitching during customer interviews. The interview section focuses on questions to ask but does not warn against discussing the product."
+          }
+        ],
+        "pass_rate": 0.2857142857142857,
+        "total_tokens": 18989,
+        "duration_ms": 59426
+      }
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "launch",
+      "with_skill": {
+        "assertions": [
+          {
+            "text": "diagnoses-phase-2",
+            "passed": true,
+            "evidence": "Opens with 'Phase Diagnosis: You've Completed Validation. Time to Launch.' and states 'Your Next Step: Phase 2 -- Launch (Before You Build).'"
+          },
+          {
+            "text": "recommends-offer-first",
+            "passed": true,
+            "evidence": "Step 2.1 is 'Turn Your Idea Into an Offer' with a detailed AI prompt for creating an irresistible offer. Explicitly says 'You are NOT building the app next.'"
+          },
+          {
+            "text": "mentions-domain-strategy",
+            "passed": true,
+            "evidence": "Step 2.2 'Get a Domain and Basic Branding' suggests checking climbclaw.com, .ai, .io variants and grabbing one in the $10-15 range."
+          },
+          {
+            "text": "mentions-direct-response-copy",
+            "passed": true,
+            "evidence": "AI prompt explicitly says 'structure that offer as a landing page written like a direct response marketer.'"
+          },
+          {
+            "text": "recommends-parallel-outreach",
+            "passed": true,
+            "evidence": "Step 2.4 'Start Outreach Immediately' runs in parallel with page building. Action plan shows Day 4-7 is outreach while Day 2-3 is building the page."
+          }
+        ],
+        "pass_rate": 1.0,
+        "total_tokens": 23329,
+        "duration_ms": 57664
+      },
+      "without_skill": {
+        "assertions": [
+          {
+            "text": "diagnoses-phase-2",
+            "passed": false,
+            "evidence": "Does not mention Phase 2 or any phase framework. Discusses validation results and recommends next steps without phase structure."
+          },
+          {
+            "text": "recommends-offer-first",
+            "passed": true,
+            "evidence": "Section 2 is 'Design a Minimum Viable Offer (Not a Product Yet)' with specific pricing examples. Section 3 is 'Pre-Sell Before You Build.'"
+          },
+          {
+            "text": "mentions-domain-strategy",
+            "passed": false,
+            "evidence": "No mention of getting a domain. Focuses on one-page descriptions and payment links but skips domain/branding entirely."
+          },
+          {
+            "text": "mentions-direct-response-copy",
+            "passed": false,
+            "evidence": "No mention of direct response marketing or copywriting style for the landing page or offer description."
+          },
+          {
+            "text": "recommends-parallel-outreach",
+            "passed": true,
+            "evidence": "Section 3 'Pre-Sell Before You Build' recommends going back to interested climbers and posting in climbing communities. Week 3 timeline shows outreach alongside offer design."
+          }
+        ],
+        "pass_rate": 0.4,
+        "total_tokens": 18388,
+        "duration_ms": 43517
+      }
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "build",
+      "with_skill": {
+        "assertions": [
+          {
+            "text": "one-feature-pushback",
+            "passed": true,
+            "evidence": "Opens with 'You listed five features... That is not an MVP. That is a full product.' Asks 'If you could only ship ONE feature and nothing else, what would it be?' and recommends personalized training plans only."
+          },
+          {
+            "text": "recommends-prd",
+            "passed": true,
+            "evidence": "Contains a full 'Product Requirement Document: ClimbClaw' section with overview, user persona, MVP scope, user flow, screens, data requirements, design direction, and success criteria."
+          },
+          {
+            "text": "copy-pasteable-prompt",
+            "passed": true,
+            "evidence": "Contains 'Base44 Starter Prompt' section with instruction 'Copy and paste this directly into Base44:' followed by a complete, formatted prompt in a code block."
+          },
+          {
+            "text": "warns-against-overbuilding",
+            "passed": true,
+            "evidence": "'The Warning' section: 'The most common Phase 3 mistake: building too much before going to market.' Also has detailed 'Explicitly OUT of Scope' list."
+          },
+          {
+            "text": "one-week-deadline",
+            "passed": true,
+            "evidence": "Timeline section states 'Target: Ship within 1 week' with daily breakdown: Day 1-2 questionnaire, Day 3-4 plan display, Day 5 polish and ship."
+          }
+        ],
+        "pass_rate": 1.0,
+        "total_tokens": 30432,
+        "duration_ms": 110023
+      },
+      "without_skill": {
+        "assertions": [
+          {
+            "text": "one-feature-pushback",
+            "passed": false,
+            "evidence": "While Section 2 says 'Do NOT build all five features at once' and recommends picking ONE, the MVP scope in Section 4 includes BOTH 'Session Tracking + Personalized Training Plans' plus a Progress Dashboard -- effectively 3 features, not 1."
+          },
+          {
+            "text": "recommends-prd",
+            "passed": true,
+            "evidence": "Contains a full PRD with 10 sections: Product Overview, MVP Scope, Data Model, Feature Specs, Pages, Build Prompt, Success Metrics, Technical Considerations, Phased Rollout, and Next Steps."
+          },
+          {
+            "text": "copy-pasteable-prompt",
+            "passed": true,
+            "evidence": "Section 6 'Base44 Build Prompt' contains a complete prompt in a code block with entities, pages, design, and AI agent specifications."
+          },
+          {
+            "text": "warns-against-overbuilding",
+            "passed": false,
+            "evidence": "Despite saying 'Pick ONE core feature', the PRD includes session tracking, session logging, progress dashboard with charts, and exercise library -- far beyond a minimal MVP. The build prompt includes 6 pages."
+          },
+          {
+            "text": "one-week-deadline",
+            "passed": true,
+            "evidence": "Section 2 says 'Ship in One Week' and Section 9 labels 'Week 1 (MVP)' as the first phase. Final line: 'Ship the MVP this week.'"
+          }
+        ],
+        "pass_rate": 0.6,
+        "total_tokens": 21216,
+        "duration_ms": 90274
+      }
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "monetize",
+      "with_skill": {
+        "assertions": [
+          {
+            "text": "diagnoses-monetization",
+            "passed": true,
+            "evidence": "Opens with 'Phase Diagnosis: You Are in Phase 4 (Monetization)' and 'you skipped the monetization step and went straight to free distribution among friends.'"
+          },
+          {
+            "text": "warns-not-charge-friends",
+            "passed": true,
+            "evidence": "Dedicated section: 'You gave it away free to your climbing buddies... Friends and climbing buddies will resist paying because you set the expectation at zero.' Explicitly says 'Do NOT try to convert your current 7 users into paying customers.'"
+          },
+          {
+            "text": "recommends-5-new-customers",
+            "passed": true,
+            "evidence": "'Your target: 5 credit cards charged. Not 5 signups.' and 'Go find 5 NEW people who have never used ClimbClaw and charge them from the first interaction.'"
+          },
+          {
+            "text": "suggests-pricing",
+            "passed": true,
+            "evidence": "Recommends 'Starting price: $29/month. Early adopter price: $15/month (50% off, locked in for life as long as they stay subscribed).'"
+          },
+          {
+            "text": "recommends-direct-outreach",
+            "passed": true,
+            "evidence": "Three outreach channels all focused on direct outreach: Reddit/forum DMs, Instagram DMs, climbing gym bulletin boards. Includes specific message templates."
+          },
+          {
+            "text": "warns-against-slow-channels",
+            "passed": true,
+            "evidence": "'Do not invest in SEO or content marketing. That takes 6-12 months to produce results.' and 'Do not spend money on ads yet.'"
+          }
+        ],
+        "pass_rate": 1.0,
+        "total_tokens": 25451,
+        "duration_ms": 98133
+      },
+      "without_skill": {
+        "assertions": [
+          {
+            "text": "diagnoses-monetization",
+            "passed": true,
+            "evidence": "Identifies the core problem: 'you never created a reason to pay' and 'The problem is not the product -- it is that you never created a reason to pay.'"
+          },
+          {
+            "text": "warns-not-charge-friends",
+            "passed": false,
+            "evidence": "Actually recommends the opposite: Week 2 plan is 'Convert Existing Users' with 'Send the founding member message to all 7 users' and 'Goal: 2-3 conversions from existing users (even friends, at a discount, count).'"
+          },
+          {
+            "text": "recommends-5-new-customers",
+            "passed": true,
+            "evidence": "Section 'Step 3: Get Your First 5 Paying Customers (Not Your Friends)' with 'Your product is not validated until a stranger pays.' Goal of 5 total paying customers by end of month."
+          },
+          {
+            "text": "suggests-pricing",
+            "passed": true,
+            "evidence": "Suggests Pro Monthly at $14.99/mo, Pro Annual at $9.99/mo, and Crew at $9.99/person/mo. Also mentions founding member pricing at $9.99/month."
+          },
+          {
+            "text": "recommends-direct-outreach",
+            "passed": true,
+            "evidence": "Channel 1 is Reddit communities, Channel 4 is direct outreach to climbing coaches via Instagram DMs. Includes specific DM scripts."
+          },
+          {
+            "text": "warns-against-slow-channels",
+            "passed": false,
+            "evidence": "Actually recommends slow channels: Channel 3 suggests 'Instagram/TikTok Climbing Content' with '30-second clips' as a growth channel. Does not warn against content marketing being too slow."
+          }
+        ],
+        "pass_rate": 0.5,
+        "total_tokens": 19521,
+        "duration_ms": 72199
+      }
+    },
+    {
+      "eval_id": 5,
+      "eval_name": "phase-skip",
+      "with_skill": {
+        "assertions": [
+          {
+            "text": "catches-phase-skip",
+            "passed": true,
+            "evidence": "Title: 'Let's Pump the Brakes Before You Write a Single Line of Code.' States: 'Where You Actually Are: Phase 1 (Validation) -- Not Phase 3 (Build).' Identifies user is skipping from research to building."
+          },
+          {
+            "text": "redirects-to-launch",
+            "passed": true,
+            "evidence": "Sunday plan includes: 'Build a simple landing page describing that offer' and 'Once you have completed validation and launched an offer (Phases 1 and 2), and you are ready to build an MVP (Phase 3)...'"
+          },
+          {
+            "text": "warns-against-premature-building",
+            "passed": true,
+            "evidence": "Dedicated section 'The Mistake You Are About to Make' warns: 'building before validating' is 'the most expensive mistake in the framework.' Shares cautionary example of a founder who spent months and money building the wrong thing."
+          },
+          {
+            "text": "does-not-answer-tech-stack",
+            "passed": true,
+            "evidence": "Explicit section: 'About That Tech Stack Question -- I am deliberately not answering it yet.' Explains the answer depends on what coaches actually need."
+          }
+        ],
+        "pass_rate": 1.0,
+        "total_tokens": 23219,
+        "duration_ms": 58174
+      },
+      "without_skill": {
+        "assertions": [
+          {
+            "text": "catches-phase-skip",
+            "passed": false,
+            "evidence": "Does not identify any phase skip. Opens with 'Great that you've done 3 weeks of research!' and immediately proceeds to answer the tech stack question."
+          },
+          {
+            "text": "redirects-to-launch",
+            "passed": false,
+            "evidence": "No mention of creating a landing page or offer before building. Goes straight from research to tech stack and weekend build plan."
+          },
+          {
+            "text": "warns-against-premature-building",
+            "passed": false,
+            "evidence": "Actively encourages building this weekend with a 'Weekend MVP Suggestion' section. Only a brief note at the end says 'make sure you've validated that climbing coaches actually want to interact... through WhatsApp' but it is a minor caveat, not a warning."
+          },
+          {
+            "text": "does-not-answer-tech-stack",
+            "passed": false,
+            "evidence": "Provides a comprehensive tech stack answer including WhatsApp Cloud API, Node.js/Python, Claude Agent SDK, PostgreSQL/MongoDB, specific npm/pip packages, and a full architecture diagram."
+          }
+        ],
+        "pass_rate": 0.0,
+        "total_tokens": 18476,
+        "duration_ms": 44110
+      }
+    },
+    {
+      "eval_id": 6,
+      "eval_name": "weak-pmf",
+      "with_skill": {
+        "assertions": [
+          {
+            "text": "identifies-weak-pmf",
+            "passed": true,
+            "evidence": "States '3 customers in 2 months is a signal you need to pay attention to, not paper over with ad spend' and 'You do not have these signals yet with 3 customers in 2 months.' Explicitly says user needs 5+ before growth."
+          },
+          {
+            "text": "warns-against-slow-channels",
+            "passed": true,
+            "evidence": "Explicitly quotes framework: 'Avoid for now: SEO, content marketing, YouTube. These take 6-12 months to produce results.' Warns both Instagram ads and YouTube are 'Phase 5: Growth tactics' and premature."
+          },
+          {
+            "text": "recommends-outreach-first",
+            "passed": true,
+            "evidence": "Section 2: 'Get to 5 Paying Customers Through Direct Outreach.' Recommends personalized outreach in climbing communities, manual DMs, and early adopter discount."
+          },
+          {
+            "text": "recommends-retargeting-not-cold-ads",
+            "passed": true,
+            "evidence": "When discussing future ads: 'paid is specifically retargeting (people who already showed interest), not cold ads to strangers. That is how you get reasonable acquisition costs.'"
+          }
+        ],
+        "pass_rate": 1.0,
+        "total_tokens": 23898,
+        "duration_ms": 85237
+      },
+      "without_skill": {
+        "assertions": [
+          {
+            "text": "identifies-weak-pmf",
+            "passed": true,
+            "evidence": "States '3 paying customers after 2 months is a signal, but it's not yet strong product-market fit.' Says 'The difference between some people will pay and this product sells itself is enormous.'"
+          },
+          {
+            "text": "warns-against-slow-channels",
+            "passed": false,
+            "evidence": "Actually recommends starting a YouTube channel in the 90-day plan (Week 7-8) and provides detailed YouTube strategy. While it says it's a '6-12 month play', it does not warn against it -- it endorses it as a 'solid long-term play.'"
+          },
+          {
+            "text": "recommends-outreach-first",
+            "passed": true,
+            "evidence": "Step 2 recommends getting '10 More Customers Manually' through referrals, community outreach, gym partnerships, and organic Instagram DMs before spending on ads."
+          },
+          {
+            "text": "recommends-retargeting-not-cold-ads",
+            "passed": false,
+            "evidence": "When discussing ads, suggests waiting until 15-20 customers but does not distinguish retargeting from cold ads. The ad discussion focuses on readiness criteria, not retargeting warm audiences."
+          }
+        ],
+        "pass_rate": 0.5,
+        "total_tokens": 19048,
+        "duration_ms": 61811
+      }
+    }
+  ],
+  "summary": {
+    "with_skill_overall_pass_rate": 1.0,
+    "without_skill_overall_pass_rate": 0.3235294117647059,
+    "delta": 0.6764705882352941
+  }
+}

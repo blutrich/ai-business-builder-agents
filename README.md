@@ -225,8 +225,16 @@ Build an offer stack: core product + acceleration bonus + risk-reduction bonus +
 ### The MVP Rule (Phase 3)
 If you could only ship ONE feature, what would it be? Build that. Nothing else. Ship in one week.
 
+### Marty Cagan's 5 MVP Questions (Phase 3)
+Before building, answer these five questions (via Yuval Samet / RiseUp, from Marty Cagan):
+1. **Can they use it?** (Usability)
+2. **Would they use it?** (Value)
+3. **Can we build it?** (Technical Feasibility - if it's 100% manual with no automation plan, that's Wishful Thinking, not an MVP)
+4. **Is it financially viable?** (Unit Economics)
+5. **Should we do it?** (Ethics)
+
 ### The Revenue Gate (Phase 4)
-5 paying customers who are NOT friends or family. If you can't get 5 to pay after 30 days, the problem is the offer, not the product.
+5 paying customers who are NOT friends or family. If you can't get 5 to pay after 30 days, the problem is the offer, not the product. Pricing is a feature of the product - free users don't validate willingness to pay. For consumer: 50-100 paying customers = validated.
 
 ### The Growth Trifecta (Phase 5)
 Personalized outreach (Month 1) + Organic content (Month 2-3) + Paid retargeting (Month 3-4) = Compounding growth engine. Build in sequence, not simultaneously.

@@ -29,6 +29,10 @@ Before monetizing, verify:
 
 If the user is still building, push them to stop and start selling.
 
+**Critical principle:** Pricing is a feature of the product, not something you add later. If people aren't willing to pay, you haven't validated. Giving something away free doesn't prove MVP - it proves people like free things. The willingness to pay is one of the most important signals. (Yuval Samet, RiseUp)
+
+**Consumer MVP benchmark:** For consumer products, 50-100 paying customers who see real value = validated MVP. For B2B, 5-10 paying companies.
+
 ### Step 2: Business Model Selection
 
 Analyze the product and recommend from these models:

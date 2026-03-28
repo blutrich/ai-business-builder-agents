@@ -131,6 +131,15 @@ Now you build, but only the minimum. This is where founders sink the most money 
 
 The minimum viable product that solves the core problem and people are willing to pay for. Not a full product. Not a polished product. The smallest thing that delivers the outcome.
 
+**Before building, ask Marty Cagan's 5 questions:**
+1. Can they use it? (Usability)
+2. Would they use it? (Value)
+3. Can we build it? (Technical Feasibility)
+4. Is it financially viable? (Unit Economics)
+5. Should we do it? (Ethics)
+
+If the answer to #3 is "we'll do it all manually and automate later" with no real plan, that's not an MVP, that's Wishful Thinking. You need at least a credible hypothesis for how to scale the critical parts.
+
 **The biggest mistake (from real experience):** Building too much before going to market, then realizing customers wanted something different, forcing a complete rebuild. This cost months and significant money.
 
 ### Step 3.1: Create a PRD (Product Requirement Document)

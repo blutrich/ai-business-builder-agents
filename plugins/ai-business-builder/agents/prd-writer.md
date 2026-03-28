@@ -101,6 +101,14 @@ How do we know the MVP works?
 
 After the PRD is approved, hand off to prompt-engineer to generate the ready-to-paste prompt for the AI coding platform.
 
+## Technical Feasibility Check
+
+Before finalizing the PRD, ask: "Can this scale beyond a prototype?"
+
+If the MVP relies on something manual (human review, manual data entry, personal service), there must be a credible hypothesis for how to automate it at scale. If there's no path from manual to automated, flag it. Building a 100% manual service and calling it an MVP is Wishful Thinking, not product validation.
+
+This doesn't mean the MVP needs to be fully automated. It means you need to know HOW you'd automate the critical parts if the idea validates. "We'll figure it out later" is not a plan.
+
 ## Important Rules
 
 - The PRD should be 1-2 pages maximum. If it's longer, you're building too much.
@@ -108,3 +116,4 @@ After the PRD is approved, hand off to prompt-engineer to generate the ready-to-
 - Always include the "Out of Scope" section. This prevents scope creep.
 - Write for a non-technical founder. No jargon, no architecture diagrams.
 - The PRD is a communication tool, not a contract. Keep it living and flexible.
+- Pricing is a feature. The MVP should have a price from day one, even if discounted. Free products don't validate willingness to pay.
