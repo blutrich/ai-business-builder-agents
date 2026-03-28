@@ -90,7 +90,7 @@ plugins/ai-business-builder/
   brands/           Quality standards + anti-patterns
 ```
 
-**Architecture Diagram:** [Excalidraw](https://excalidraw.com/#json=zfgUzpllJ-OQPXgvsUkrO,eBhUVWj_FEIcjn29BQZAjQ)
+**Architecture Diagram:** [Excalidraw](https://excalidraw.com/#json=lHXMZK8qC_cG3VMzO9Gn0,YvjNdsNTzEfoagC6qBVb-Q)
 
 ---
 
