@@ -1,0 +1,213 @@
+{
+  "skill_name": "ai-business-builder",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have this idea for an AI tool that helps real estate agents write property descriptions. I think it could be big but I'm not sure where to start. How do I validate if anyone would actually pay for this?",
+      "expected_output": "Phase-specific coaching for validation: should recommend problem research (forums, Reddit) and customer discovery interviews with real estate agents. Should NOT dump all 5 phases.",
+      "assertions": [
+        {
+          "name": "diagnoses-phase-1",
+          "text": "Correctly identifies user is in Phase 1 (Validation) and focuses advice there",
+          "type": "qualitative"
+        },
+        {
+          "name": "recommends-research-first",
+          "text": "Recommends doing problem research on forums/Reddit/communities before building anything",
+          "type": "qualitative"
+        },
+        {
+          "name": "recommends-customer-interviews",
+          "text": "Recommends customer discovery interviews with real estate agents",
+          "type": "qualitative"
+        },
+        {
+          "name": "warns-against-building-first",
+          "text": "Warns against jumping straight to building before validation",
+          "type": "qualitative"
+        },
+        {
+          "name": "does-not-dump-all-phases",
+          "text": "Does NOT dump all 5 phases at once - stays focused on current phase",
+          "type": "qualitative"
+        },
+        {
+          "name": "tool-agnostic",
+          "text": "Suggests tool categories rather than mandating specific tools",
+          "type": "qualitative"
+        },
+        {
+          "name": "mentions-no-pitching-rule",
+          "text": "Warns not to talk about the product during customer interviews",
+          "type": "qualitative"
+        }
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I validated my idea by talking to 9 people — 3 groups of 3. Turns out fitness coaches really need help with client meal plans. 6 out of 9 said they'd pay. What's my next step?",
+      "expected_output": "Should identify user has completed Phase 1 and route to Phase 2 (Launch). Should recommend turning the idea into an irresistible offer, getting a domain, building a landing page with direct response copy, and starting outreach immediately.",
+      "assertions": [
+        {
+          "name": "diagnoses-phase-2",
+          "text": "Correctly identifies user should move to Phase 2 (Launch) since validation is done",
+          "type": "qualitative"
+        },
+        {
+          "name": "recommends-offer-first",
+          "text": "Recommends creating an offer/landing page BEFORE building the product",
+          "type": "qualitative"
+        },
+        {
+          "name": "mentions-domain-strategy",
+          "text": "Mentions getting a domain as an early step",
+          "type": "qualitative"
+        },
+        {
+          "name": "mentions-direct-response-copy",
+          "text": "Recommends landing page copy written like a direct response marketer or conversion-focused",
+          "type": "qualitative"
+        },
+        {
+          "name": "recommends-parallel-outreach",
+          "text": "Recommends starting outreach immediately, in parallel with building",
+          "type": "qualitative"
+        }
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I built a prototype of my AI scheduling assistant using Bolt. A few friends tried it and said it's cool but I have zero paying customers. What should I do next?",
+      "expected_output": "Should identify user is between Phase 3 and 4 (has MVP but no revenue). Should push toward monetization: find 5 paying customers through outreach, choose a business model, offer early adopter discount. Should NOT suggest more building.",
+      "assertions": [
+        {
+          "name": "diagnoses-monetization-phase",
+          "text": "Correctly identifies user needs to focus on monetization (Phase 4), not more building",
+          "type": "qualitative"
+        },
+        {
+          "name": "recommends-finding-paying-customers",
+          "text": "Recommends finding first 5 paying customers through outreach",
+          "type": "qualitative"
+        },
+        {
+          "name": "warns-against-more-building",
+          "text": "Warns against continuing to build features before getting revenue",
+          "type": "qualitative"
+        },
+        {
+          "name": "suggests-pricing-strategy",
+          "text": "Suggests a pricing or business model strategy (e.g., early adopter discount)",
+          "type": "qualitative"
+        },
+        {
+          "name": "recommends-direct-outreach",
+          "text": "Recommends direct outreach as the primary channel (not SEO/content)",
+          "type": "qualitative"
+        },
+        {
+          "name": "warns-not-to-charge-friends",
+          "text": "Warns against charging existing friends/beta users — go find new paying customers",
+          "type": "qualitative"
+        }
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "My AI content repurposing tool is making about $3k/month from 20 customers I found through cold email. How do I scale this to $30k/month?",
+      "expected_output": "Should identify user is in Phase 5 (Growth). Should recommend the growth trifecta: scale outreach, add organic content (LinkedIn), then paid retargeting. Should also mention automation of operations.",
+      "assertions": [
+        {
+          "name": "diagnoses-growth-phase",
+          "text": "Correctly identifies user is in Phase 5 (Growth) with product-market fit signals",
+          "type": "qualitative"
+        },
+        {
+          "name": "recommends-growth-trifecta",
+          "text": "Recommends at least 2 of the 3 growth trifecta channels: outreach at scale, organic content, paid retargeting",
+          "type": "qualitative"
+        },
+        {
+          "name": "mentions-organic-content",
+          "text": "Specifically recommends organic content creation (especially LinkedIn for B2B)",
+          "type": "qualitative"
+        },
+        {
+          "name": "mentions-automation",
+          "text": "Mentions automating operations to handle scale",
+          "type": "qualitative"
+        },
+        {
+          "name": "builds-on-existing-success",
+          "text": "Acknowledges cold email is working and advises scaling it, not abandoning it",
+          "type": "qualitative"
+        },
+        {
+          "name": "sequential-not-simultaneous",
+          "text": "Recommends building growth channels in sequence, not all at once",
+          "type": "qualitative"
+        }
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "I've been doing tons of research for 3 weeks and I think I've found the perfect market. I'm ready to start coding my app this weekend. What stack should I use?",
+      "expected_output": "Should catch that user is trying to skip Phase 2 (Launch). Should redirect: before building, create an offer and landing page, start talking to potential customers, get a domain. Research is done but launch comes before build.",
+      "assertions": [
+        {
+          "name": "catches-phase-skip",
+          "text": "Catches that user is trying to skip from Phase 1 directly to Phase 3 (skipping Launch)",
+          "type": "qualitative"
+        },
+        {
+          "name": "redirects-to-launch",
+          "text": "Redirects user to Phase 2: create an offer and landing page before building",
+          "type": "qualitative"
+        },
+        {
+          "name": "warns-against-premature-building",
+          "text": "Warns against building before having an offer in front of customers",
+          "type": "qualitative"
+        },
+        {
+          "name": "does-not-answer-tech-stack",
+          "text": "Does NOT get into tech stack discussion — that's not the priority right now",
+          "type": "qualitative"
+        }
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "I launched my MVP 2 months ago and have 3 customers paying $29/month. I want to start running Facebook ads and creating YouTube content to grow faster.",
+      "expected_output": "Should identify user is in early Phase 4/5 transition but with weak PMF signals (only 3 customers). Should advise getting to 5 customers first through direct outreach before investing in paid ads or content. SEO/YouTube take too long at this stage.",
+      "assertions": [
+        {
+          "name": "identifies-weak-pmf",
+          "text": "Identifies that 3 customers is not strong enough PMF to invest in growth channels",
+          "type": "qualitative"
+        },
+        {
+          "name": "warns-against-slow-channels",
+          "text": "Warns against YouTube/content marketing as too slow for this stage (6-12 months to results)",
+          "type": "qualitative"
+        },
+        {
+          "name": "recommends-outreach-first",
+          "text": "Recommends continuing direct outreach to hit 5+ paying customers before expanding channels",
+          "type": "qualitative"
+        },
+        {
+          "name": "recommends-retargeting-not-cold-ads",
+          "text": "If paid ads are discussed, recommends retargeting warm audiences over cold ads",
+          "type": "qualitative"
+        }
+      ],
+      "files": []
+    }
+  ]
+}

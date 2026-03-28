@@ -1,0 +1,24 @@
+{
+  "name": "ai-business-builder",
+  "version": "1.0.0",
+  "description": "Multi-agent system for building AI-powered businesses from zero to scale. 8 specialist agents, 1 lead orchestrator, 1 process guardian, 5 phase flows, 3 scrapers.",
+  "author": {
+    "name": "Ofer Blutrich",
+    "email": "blutrich@gmail.com",
+    "url": "https://github.com/blutrich"
+  },
+  "homepage": "https://github.com/blutrich/ai-business-builder-agents",
+  "repository": "https://github.com/blutrich/ai-business-builder-agents",
+  "keywords": [
+    "business",
+    "startup",
+    "validation",
+    "mvp",
+    "growth",
+    "monetization",
+    "ai-business",
+    "multi-agent"
+  ],
+  "category": "productivity",
+  "license": "MIT"
+}
